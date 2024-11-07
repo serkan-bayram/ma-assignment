@@ -103,11 +103,11 @@
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/welcomeText"
+        android:id="@+id/signIn_welcomeTextHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="@string/welcome_text_heading"
+        android:text="@string/sign_in_welcome_text_heading"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/logo"
@@ -116,10 +116,10 @@
         app:layout_constraintTop_toTopOf="@+id/logo" />
 
     <TextView
-        android:id="@+id/welcomeText_subHeading"
+        android:id="@+id/signIn_welcomeTextSubHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_text_sub_heading"
+        android:text="@string/sign_in_welcome_text_sub_heading"
         android:layout_marginTop="80dp"
         android:textSize="18sp"
         android:textStyle="normal"

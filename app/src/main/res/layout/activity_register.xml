@@ -7,4 +7,41 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/register_welcomeTextHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/register_welcome_text_heading"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/register_welcomeTextSubHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_welcome_text_sub_heading"
+        android:layout_marginTop="80dp"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="@+id/logo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

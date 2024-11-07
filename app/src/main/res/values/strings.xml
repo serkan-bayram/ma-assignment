@@ -7,10 +7,13 @@
     <string name="forgot_password_button">Forgot password?</string>
     <string name="next_button">Next ></string>
     <string name="logo">Logo</string>
-    <string name="welcome_text_heading">Welcome back</string>
-    <string name="welcome_text_sub_heading">sign in to access your account</string>
+    <string name="sign_in_welcome_text_heading">Welcome back</string>
+    <string name="sign_in_welcome_text_sub_heading">sign in to access your account</string>
     <string name="new_member_text">New Member?</string>
     <string name="register_now_text">Register now</string>
+
+    <string name="register_welcome_text_heading">Get started</string>
+    <string name="register_welcome_text_sub_heading">by creating your free account.</string>
 
 
     <string name="mail_icon_content_description">Mail Icon</string>
