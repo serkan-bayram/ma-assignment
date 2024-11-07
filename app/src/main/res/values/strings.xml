@@ -2,4 +2,5 @@
     <string name="app_name">MA_Assignment</string>
 
     <string name="email_input">Enter your email</string>
+    <string name="password_input">Password</string>
 </resources>
