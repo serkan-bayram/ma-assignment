@@ -8,6 +8,9 @@
     <string name="next_button">Next ></string>
     <string name="logo">Logo</string>
 
+    <string name="welcome_text_heading">Welcome back</string>
+    <string name="welcome_text_sub_heading">sign in to access your account</string>
+
 
     <string name="mail_icon_content_description">Mail Icon</string>
     <string name="lock_icon_content_description">Lock Icon</string>
