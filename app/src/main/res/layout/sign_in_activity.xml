@@ -37,7 +37,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailInput">
+        app:layout_constraintTop_toBottomOf="@+id/emailInput"
+        app:layout_constraintVertical_bias="0.1"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -52,7 +54,7 @@
         android:layout_height="22dp"
         android:layout_marginTop="8dp"
         android:text="@string/remember_me_checkbox"
-        android:textSize="9sp"
+        android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.14"
@@ -62,12 +64,12 @@
 
     <TextView
         android:id="@+id/forgotPasswordButton"
-        android:layout_width="87dp"
+        android:layout_width="100dp"
         android:layout_height="22dp"
         android:layout_marginTop="10dp"
         android:text="@string/forgot_password_button"
         android:textColor="#6C63FF"
-        android:textSize="10sp"
+        android:textSize="11sp"
         android:textAlignment="textEnd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,6 +77,16 @@
         app:layout_constraintStart_toEndOf="@+id/rememberMeCheckBox"
         app:layout_constraintTop_toBottomOf="@+id/passwordInput"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="332dp"
+        android:layout_height="54dp"
+        android:text="@string/next_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,6 +5,7 @@
     <string name="password_input">Password</string>
     <string name="remember_me_checkbox">Remember me</string>
     <string name="forgot_password_button">Forgot password?</string>
+    <string name="next_button">Next ></string>
 
 
     <string name="mail_icon_content_description">Mail Icon</string>
