@@ -3,6 +3,7 @@
 
     <string name="email_input">Enter your email</string>
     <string name="password_input">Password</string>
+    <string name="remember_me_checkbox">Remember me</string>
 
 
     <string name="mail_icon_content_description">Mail Icon</string>

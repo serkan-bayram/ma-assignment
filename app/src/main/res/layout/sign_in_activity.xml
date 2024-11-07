@@ -46,5 +46,15 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
+    <CheckBox
+        android:layout_width="157dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/remember_me_checkbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
