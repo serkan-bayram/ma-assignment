@@ -13,6 +13,7 @@
     <string name="register_welcome_text_sub_heading">by creating your free account.</string>
     <string name="register_email_input">Valid email</string>
     <string name="register_password_input">Strong Password</string>
+    <string name="register_sign_in_now_text">Sign In</string>
 
     /// Common strings
     <string name="remember_me_checkbox">Remember me</string>
@@ -20,7 +21,9 @@
     <string name="next_button">Next ></string>
     <string name="logo">Logo</string>
     <string name="new_member_text">New Member?</string>
+    <string name="already_member_text">Already a member?</string>
     <string name="full_name_input">Full name</string>
     <string name="phone_number_input">Phone number</string>
+    <string name="accept_terms_checkbox">By checking the box you agree to our Terms and Conditions.</string>
 
 </resources>
