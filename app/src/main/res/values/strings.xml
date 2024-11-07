@@ -1,22 +1,26 @@
 <resources>
     <string name="app_name">MA_Assignment</string>
 
-    <string name="email_input">Enter your email</string>
-    <string name="password_input">Password</string>
+    /// Only used in SignInActivity
+    <string name="sign_in_email_input">Enter your email</string>
+    <string name="sign_in_password_input">Password</string>
+    <string name="sign_in_welcome_text_heading">Welcome back</string>
+    <string name="sign_in_welcome_text_sub_heading">sign in to access your account</string>
+    <string name="sign_in_register_now_text">Register now</string>
+
+    // Only used in RegisterActivity
+    <string name="register_welcome_text_heading">Get started</string>
+    <string name="register_welcome_text_sub_heading">by creating your free account.</string>
+    <string name="register_email_input">Valid email</string>
+    <string name="register_password_input">Strong Password</string>
+
+    /// Common strings
     <string name="remember_me_checkbox">Remember me</string>
     <string name="forgot_password_button">Forgot password?</string>
     <string name="next_button">Next ></string>
     <string name="logo">Logo</string>
-    <string name="sign_in_welcome_text_heading">Welcome back</string>
-    <string name="sign_in_welcome_text_sub_heading">sign in to access your account</string>
     <string name="new_member_text">New Member?</string>
-    <string name="register_now_text">Register now</string>
-
-    <string name="register_welcome_text_heading">Get started</string>
-    <string name="register_welcome_text_sub_heading">by creating your free account.</string>
-
-
-    <string name="mail_icon_content_description">Mail Icon</string>
-    <string name="lock_icon_content_description">Lock Icon</string>
+    <string name="full_name_input">Full name</string>
+    <string name="phone_number_input">Phone number</string>
 
 </resources>
