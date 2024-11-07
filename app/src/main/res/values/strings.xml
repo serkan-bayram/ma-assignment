@@ -3,4 +3,9 @@
 
     <string name="email_input">Enter your email</string>
     <string name="password_input">Password</string>
+
+
+    <string name="mail_icon_content_description">Mail Icon</string>
+    <string name="lock_icon_content_description">Lock Icon</string>
+
 </resources>
