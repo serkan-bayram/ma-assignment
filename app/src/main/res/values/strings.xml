@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MA_Assignment</string>
+
+    <string name="email_input">Enter your email</string>
 </resources>
