@@ -25,4 +25,30 @@ class CredentialsManagerTest {
 
         assertEquals(false, credentialsManager.isEmailValid("not_a_real_email"))
     }
+
+    @Test
+    fun isPasswordEmpty_thenReturnFalse(){
+        val credentialsManager = CredentialsManager()
+
+        assertEquals(false, credentialsManager.isPasswordValid(""))
+    }
+
+    @Test
+    fun isPasswordNotEmpty_thenReturnTrue(){
+        val credentialsManager = CredentialsManager()
+
+        assertEquals(true, credentialsManager.isPasswordValid("not_empty"))
+    }
+
+    @Test
+    fun isWrongCredentials_thenReturnFalse(){
+        val credentialsManager = CredentialsManager()
+        val email = "wrongEmail"
+        val password = ""
+
+        val result = credentialsManager.login(email, password)
+
+        assertEquals(false, result)
+    }
+
 }

@@ -1,9 +1,9 @@
     Successfully Login - ?
 
     Email:
-        Error - email is empty
+        v Error - email is empty
         Error - email has wrong format
-        Success - email has good format
+        v Success - email has good format
 
     Password:
         Error - password is empty

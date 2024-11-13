@@ -17,4 +17,13 @@ class CredentialsManager {
         return regex.matches(email)
     }
 
+
+    fun isPasswordValid(password: String): Boolean {
+        return password.isNotEmpty()
+    }
+
+    fun login(email: String, password: String): Boolean {
+        return isEmailValid(email) && isPasswordValid(password);
+    }
+
 }
