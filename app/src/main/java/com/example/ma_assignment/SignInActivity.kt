@@ -17,8 +17,6 @@ import com.google.android.material.textfield.TextInputLayout
 class SignInActivity : AppCompatActivity() {
 
     private val credentialsManager = CredentialsManager()
-    private val registerNowLabel: TextView
-        get() = findViewById(R.id.registerNowText)
 
     private val nextButton: Button
         get() = findViewById(R.id.nextButton)
@@ -36,10 +34,10 @@ class SignInActivity : AppCompatActivity() {
         get() = findViewById(R.id.passwordInput)
 
     private val email: String
-        get() = emailInputLayout.editText?.text?.toString().orEmpty()
+        get() = emailInputField.text?.toString().orEmpty()
 
     private val password: String
-        get() = passwordInputLayout.editText?.text?.toString().orEmpty()
+        get() = passwordInputField.text?.toString().orEmpty()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,7 +51,7 @@ class SignInActivity : AppCompatActivity() {
 
         val registerNowTextView = findViewById<TextView>(R.id.registerNowText)
 
-        registerNowTextView.setOnClickListener { v: View? ->
+        registerNowTextView.setOnClickListener { _: View? ->
             val intent = Intent(
                 this,
                 RegisterActivity::class.java
@@ -62,11 +60,8 @@ class SignInActivity : AppCompatActivity() {
         }
 
         nextButton.setOnClickListener {
-            val email = emailInputField.text.toString()
-            val password = passwordInputField.text.toString()
-
-            val isEmailValid = CredentialsManager().isEmailValid(email)
-            val isPasswordValid = CredentialsManager().isPasswordValid(password)
+            val isEmailValid = credentialsManager.isEmailValid(email)
+            val isPasswordValid = credentialsManager.isPasswordValid(password)
 
             if (!isEmailValid) {
                 emailInputLayout.isErrorEnabled = true
