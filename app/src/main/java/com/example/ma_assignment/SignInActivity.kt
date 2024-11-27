@@ -66,18 +66,14 @@ class SignInActivity : AppCompatActivity() {
             if (!isEmailValid) {
                 emailInputLayout.isErrorEnabled = true
                 emailInputLayout.error = "Email is invalid!"
-            }
-            else
-            {
+            } else {
                 emailInputLayout.isErrorEnabled = false
             }
 
             if (!isPasswordValid) {
                 passwordInputLayout.isErrorEnabled = true
                 passwordInputLayout.error = "Password is invalid!"
-            }
-            else
-            {
+            } else {
                 passwordInputLayout.isErrorEnabled = false
             }
 
