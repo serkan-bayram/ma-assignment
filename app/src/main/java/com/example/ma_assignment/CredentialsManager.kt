@@ -4,6 +4,10 @@ import android.util.Patterns
 
 class CredentialsManager {
 
+    val credentialsMap = mutableMapOf(
+        Pair("Key", "Value")
+    )
+
     fun isEmailValid(email: String): Boolean{
         val emailPattern = "[a-zA-Z0-9\\+\\.\\_\\%\\-\\+]{1,256}" +
                 "\\@" +
@@ -23,7 +27,19 @@ class CredentialsManager {
     }
 
     fun login(email: String, password: String): Boolean {
-        return isEmailValid(email) && isPasswordValid(password);
+        return credentialsMap[email].equals(password)
+    }
+//        if (credentialsMap.contains(email)) {
+//            if (credentialsMap.get(email).equals(password)){
+//                return true
+//            }
+//        }
+//
+//        return isEmailValid(email) && isPasswordValid(password)
+//    }
+
+    fun register(fullName: String, email: String, phoneNumber: String, password: String) {
+
     }
 
 }

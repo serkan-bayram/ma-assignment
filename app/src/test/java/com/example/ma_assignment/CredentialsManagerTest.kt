@@ -51,4 +51,21 @@ class CredentialsManagerTest {
         assertEquals(false, result)
     }
 
+    // Given proper credentials, when user registers, then create a new account
+    @Test
+    fun isProperCredentials_whenUserRegisters_thenCreateAccount(){
+        val email = "another@te.st"
+        val password = "123456qwerty"
+
+        val credentialsManager = CredentialsManager()
+
+        credentialsManager.register("Full name", email, "600 600 600", password)
+
+        val isLoginSuccess = credentialsManager.login(email, password)
+        assertTrue(isLoginSuccess)
+    }
+    // Given already used email, =||=, then return error
+    // Given already used email with different casing, =||=, =||=
+    // Given already used email with different casing, when user logs in, then return success
+
 }
