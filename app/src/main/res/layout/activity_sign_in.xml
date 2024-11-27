@@ -8,14 +8,14 @@
     tools:context=".SignInActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/emailInput"
+        android:id="@+id/emailInputLayout"
         android:layout_width="332dp"
-        android:layout_height="51dp"
-        android:hint="@string/sign_in_email_input"
+        android:layout_height="80dp"
         android:contentDescription="@null"
+        android:hint="@string/sign_in_email_input"
+        app:boxBackgroundColor="#f2f1ed"
         app:endIconDrawable="@drawable/mail"
         app:endIconMode="custom"
-        app:boxBackgroundColor="#f2f1ed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,30 +23,31 @@
 
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailInput"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="54dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/passwordInput"
+        android:id="@+id/passwordInputLayout"
         android:layout_width="332dp"
-        android:layout_height="51dp"
-        android:hint="@string/sign_in_password_input"
+        android:layout_height="80dp"
         android:contentDescription="@null"
+        android:hint="@string/sign_in_password_input"
+        app:boxBackgroundColor="#f2f1ed"
         app:endIconDrawable="@drawable/lock"
         app:endIconMode="custom"
-        app:boxBackgroundColor="#f2f1ed"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailInput"
-        app:layout_constraintVertical_bias="0.04"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/emailInputLayout"
+        app:layout_constraintVertical_bias="0.04">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordInput"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="54dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -54,32 +55,30 @@
     <CheckBox
         android:id="@+id/rememberMeCheckBox"
         android:layout_width="157dp"
-        android:layout_height="22dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:text="@string/remember_me_checkbox"
-        android:textSize="11sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.14"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordInput"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout"
         app:layout_constraintVertical_bias="0" />
 
     <TextView
         android:id="@+id/forgotPasswordButton"
-        android:layout_width="100dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="140dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="235dp"
         android:text="@string/forgot_password_button"
+        android:textAlignment="center"
         android:textColor="#6C63FF"
-        android:textSize="11sp"
-        android:textAlignment="textEnd"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.663"
         app:layout_constraintStart_toEndOf="@+id/rememberMeCheckBox"
-        app:layout_constraintTop_toBottomOf="@+id/passwordInput"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout" />
 
     <Button
         android:id="@+id/nextButton"
@@ -89,14 +88,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordInputLayout" />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/logo"
-        app:layout_constraintBottom_toTopOf="@+id/emailInput"
+        app:layout_constraintBottom_toTopOf="@+id/emailInputLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
