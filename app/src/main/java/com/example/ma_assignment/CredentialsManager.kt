@@ -25,11 +25,20 @@ class CredentialsManager {
     }
 
     fun login(email: String, password: String): Boolean {
-        return credentialsMap["email"].equals(password)
+        return credentialsMap[email].equals(password)
     }
 
-    fun register(fullName: String, email: String, phoneNumber: String, password: String) {
-        credentialsMap.put(email, password);
+    fun register(fullName: String, email: String, phoneNumber: String, password: String): String {
+        val normalizedEmail = email.lowercase()
+        if (credentialsMap.keys.any { it.equals(normalizedEmail, ignoreCase = true) }) {
+            return "Error: Email already taken"
+        }
+        if (fullName.isBlank()) return "Error: Full name cannot be empty"
+        if (!isEmailValid(email)) return "Error: Invalid email format"
+        if (phoneNumber.isBlank()) return "Error: Phone number cannot be empty"
+        if (!isPasswordValid(password)) return "Error: Password cannot be empty"
+        credentialsMap[normalizedEmail] = password
+        return "Registration successful"
     }
 
 }
