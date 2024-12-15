@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 
-
+/*
 class SignInActivity : AppCompatActivity() {
 
     private val credentialsManager = CredentialsManager()
@@ -79,4 +79,7 @@ class SignInActivity : AppCompatActivity() {
 
         }
     }
+
 }
+
+ */
