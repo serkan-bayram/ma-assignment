@@ -57,9 +57,9 @@ class SignInFragment(private val credentialsManager: CredentialsManager) : Fragm
             }
         }
 
-        registerNowTextView.setOnClickListener {
-            (activity as? MainActivity)?.navigateToRegister()
-        }
+        //registerNowTextView.setOnClickListener {
+        //    (activity as? MainActivity)?.navigateToRegister()
+        //}
 
         return view
     }
